@@ -44,7 +44,8 @@ class Box extends Component {
             <p id="text" style={{ color : this.state.color }}><i class="fa fa-quote-left"> </i>  {this.state.quote.text}  <i class="fa fa-quote-right"></i></p>
             <p id="author" style={{ color : this.state.color }}>_ {this.state.quote.author}</p>
             <div className="buttons">
-            <NextButton onClick={ this.handleNext } color={this.state.color} /> <TwitterButton color={this.state.color} text={ this.state.quote.text } author={ this.state.quote.author }/>
+            <NextButton onClick={ this.handleNext } color={this.state.color} />
+            <TwitterButton color={this.state.color} text={ this.state.quote.text } author={ this.state.quote.author }/>
             {/* <a href={ url } id="tweet-quote" style={{ backgroundColor : this.state.color }}><i class="fa fa-twitter"></i></a> */}
             </div>
             
